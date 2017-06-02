@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="employee-details">
+<xs:complexType>
+<xs:sequence>
+	<xs:element name="emp" minOccurs="1" maxOccurs="unbounded">
+	<xs:complexType>
+	<xs:attribute name="id" type="xs:integer" use="required"/>
+	<xs:sequence>
+		<xs:element name="name" maxOccurs="1">
+		<xs:complexType>
+		<xs:sequence>
+			<xs:element name="first-name" type="xs:string"/>
+			<xs:element name="last-name" type="xs:string"/>
+		</xs:sequence>
+		</xs:complexType>
+		</xs:element>
+		<xs:element name="depart">
+		<xs:simpleType>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="D001"/>
+			<xs:enumeration value="D002"/>
+			<xs:enumeration value="D003"/>
+			<xs:enumeration value="D004"/>
+		</xs:restriction>
+		</xs:simpleType>
+		</xs:element>
+		<xs:element name="salary">
+		<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="2000"/>
+			<xs:maxInclusive value="2000000"/>
+		</xs:restriction>
+		</xs:simpleType>
+		</xs:element>
+		<xs:element name="phone">
+		<xs:simpleType>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="12"/>
+			<xs:maxLength value="16"/>
+		</xs:restriction>
+		</xs:simpleType>
+		</xs:element>
+		<xs:element name="address" maxOccurs="1">
+		<xs:complexType>
+		<xs:sequence>
+			<xs:element name="resi" type="xs:string"/>
+			<xs:element name="off" type="xs:string"/>
+		</xs:sequence>
+		</xs:complexType>
+		</xs:element>
+	</xs:sequence>
+	</xs:complexType>
+	</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema>

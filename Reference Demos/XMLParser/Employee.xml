@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTf-8"?>
+<employee-details xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Employee.xsd">
+	<emp id="1001">
+	<name>
+		<first-name>Tanmoy</first-name>
+		<last-name>Hazra</last-name>
+	</name>
+	<depart>D001</depart>
+	<salary>646200</salary>
+	<phone>033-25435318</phone>
+	<address>
+		<resi>Shyambazar</resi>
+		<off>SaltLake</off>
+	</address>
+	</emp>
+	<emp id="1002">
+	<name>
+		<first-name>Avijit</first-name>
+		<last-name>Sawant</last-name>
+	</name>
+	<depart>D004</depart>
+	<salary>64600</salary>
+	<phone>022-25435318</phone>
+	<address>
+		<off>Andheri</off>
+		<resi>Khar</resi>
+	</address>
+	</emp>
+</employee-details>
